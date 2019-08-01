@@ -1,0 +1,48 @@
+html,body,#root,.App {
+  height: 100%;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.btns {
+  margin: .5em 0;
+}
+
+.App{
+  display: flex;
+  flex-direction: row;
+}
+
+.App > .nav_left{
+  width: 200px;
+  background-color: teal;
+  text-align: center;
+}
+.nav_left{
+  color: #ffffff;
+}
+.nav_left > .title{
+  line-height: 4em;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* .nav_left > ul.nav >li{
+  line-height: 2.5em;
+  border-bottom: 1px solid #efefef;
+} */
+li{
+  line-height: 2.5em;
+  border-bottom: 1px solid #efefef;
+  color: #ffffff;
+}
+.nav_left a{
+  color: #ffffff;
+} 
+.App > .content{
+  flex: 1;
+  padding: 1em;
+  overflow-y: auto;
+}
+

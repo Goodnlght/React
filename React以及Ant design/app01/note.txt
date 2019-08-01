@@ -1,0 +1,246 @@
+  day01
+  
+  dom驱动
+  dom改变->数据改变
+  删除
+  delHandle
+    发送请求到后台删除
+    查询所有数据
+    dom更新
+
+前端企业级开发框架
+  数据驱动
+  数据->dom改变
+  delHandle
+    发送请求到后台删除
+    查询所有数据
+    数据更新
+前端企业级框架
+  react       facebook
+  vue         尤雨溪 阿里 （weex基于vue）
+  angularJS   谷歌
+
+gitbook
+  开源的文档系统；markdown ,md【typora】
+  http://134.175.154.93:8080/day01.html
+
+mvvm（纯前端框架，前后台分离项目中的前端框架）
+  m model
+    从后台获取到数据
+    模拟数据
+  v view
+    视图,html标签->组件
+    rn: Nav (div span)
+  vm 控制器
+    绑定数据操作！
+    将绑定的model渲染到view中【react】
+mvc（后端web框架 servlet/jsp、asp）
+  m model
+    pojo类，数据模型
+  v view
+    jsp
+  c 控制器
+    servlet
+    调用接口查询数据，将查询的数据绑定到view中，然后进行渲染
+nodejs,mvc模式(美团 高级前端)
+  m
+    js类，对象
+  v
+    jade【jsp】
+  c
+    express 【servlet】
+
+jstl(语法)
+  request.setAttribute('stus',students)
+  <ul>
+    <li c:forEach="s students">
+      {{s.name}}
+    </li>
+  <ul>
+  => tomcat 、前端框架（mvvm）
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+jsx
+  javascript + xml融合
+  function foo(){
+      return (<div>hello world</div>);
+  }
+
+  <div>
+    {foo()}
+  </div>
+
+  react
+  react-dom
+  jsx -babel-> javascript 运行  
+
+安装create-react-app
+> npm install -g create-react-app
+
+
+1. 熟悉react项目的结构
+  app01
+    package.json  模块项目的核心配置文件
+    node_modules  第三方依赖
+    src           源代码
+    dist          目标代码，产品
+
+2. 开发流程
+  1）创建项目
+  2）启动项目 npm run start/ yarn start
+    react项目内置了一个静态服务器
+    启动了静态服务器
+    前端代码构建后部署到静态服务器中
+  3) 编写代码
+    如果代码发生了变化，会自动更新与部署
+  4）交付
+    npm run build
+
+3. 编写代码
+
+
+
+
+4. yarn应用
+  与npm类似，都是node的包管理机制，因为包里面可以封装一些问题的解决方案，例如 qs、jquery、axios、lodash...
+
+  npm init
+  npm install xx
+  npm install 
+    读取package.json，遍历下载依赖
+  npm install --save xx
+  npm install --save-dev xx
+  npm install --global  xx / -g
+  npm uninstall --save xx
+  npm run build
+    构建产品
+  ------------------
+  yarn init
+  yarn add xx
+    产品依赖
+  yarn add --dev xxx
+    开发依赖
+  yarn install 
+    读取package.json，遍历下载依赖
+  yarn upgrade
+  yarn remove
+  yarn build
+
+5. 代码解析
+  index.js  组件
+    import Hello from './Hello'
+    ReactDOM.render(<Hello/>,root)
+
+  App.js
+  Hello.js  组件
+    function Hello(){
+      return <div>hello world</div>
+    }
+    export default Hello;
+  
+
+6. 组件概念
+  问题：如何封装一个列表组件，传递信息，进行显示
+  1) 组件调用，调用组件的时候可以为其传递参数
+  <div>
+    <MyUl data={["terry","larry","tom"]}>
+  </div>
+
+  2) 组件定义
+    function MyUl(props){
+      let list = props.data;
+      return (
+        <ul>
+          <li><li>
+        </ul>
+      );
+    }
+  3) 组件调用
+    import MyUl from './MyUl'
+
+    <MyUl a='hello' b={1} c={[1,2,3]}>
+  4) 组件接收参数
+    function MyUl(props){
+      props.a
+      props.b
+      props.c
+    }
+  5) 简单渲染
+    let msg = "hello world"
+    <div>{msg}</div>
+  6) 列表渲染
+    let arr = [1,2,3,4];
+
+    <ul>
+      {
+        arr.map(item => <li>item</li>)
+      }
+    </ul>
+
+
+--------作业---------
+1. 安装vscode
+https://code.visualstudio.com/Download
+
+2. 学生选课系统
+  完成学生信息的列表渲染
+  1) 查询所有学生信息
+    table
+  2) jquery
+
+  课程信息
+
+===============================================================
+
+day02
+
+yarn help 命令
+查看yarn相关命令的帮助文档
+
+react  项目结构
+
+app01
+    node_modules
+    src
+      index.js    入口文件
+      index.css
+      App.js      主页模块
+      App.css     
+    package.json
+组件(模块)
+按钮，列表，子页面
+
+渲染
+
+
+1.简单数据渲染
+
+2.列表渲染
+
+3.条件渲染
+
+
+6.类复习  
+
+
+=================================
+
+我为每个同学创建了一个仓库目录，仓库目录是大家的姓名拼音简写，例如张三就是zhangsan，张晓明就是zhangxm
+仓库地址格式如下，例如张晓明要登录：
+地址： svn://134.175.154.93:3690/bt3/zhangxm
+用户名：zhangxm
+密码：zhangxm
+
+
+
+
+
+
+
+

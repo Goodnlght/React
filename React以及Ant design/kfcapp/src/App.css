@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: left;
+  /* border: 1px solid green; */
+}
+html,body,#root,.App{
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    
+}
+
+.App > .header{
+    height: 100px;
+    color: #fff;
+    padding: 0 2em;
+    
+}
+
+h1{
+  height: 100px;
+  text-align: center;
+  line-height: 100px; 
+}
+
+ul li{
+  margin-top: 30px;
+  text-align: center;
+  line-height: 10px;
+}
+
+.App > .content{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.App > .content .nav{
+    width: 200px;
+    border-right: 1px solid black;
+    background-color: teal;
+}
+
+.App > .content .content-right{
+     flex:1;
+     border: 1px solid teal;
+     padding: 1em;
+     background-color: pink;
+}
+table.tbl{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.tbl.td,
+table.tbl.tr{
+ border: 1px solid #ededed;
+ line-height: 2.5em;
+ text-align: center;
+}
